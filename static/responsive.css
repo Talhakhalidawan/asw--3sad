@@ -1,0 +1,92 @@
+@media (min-width: 1200px) {
+    .hero-content {
+        padding-inline: .5rem;
+        top: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        max-width: 700px;
+    }
+    .btns-grp-hero .btn {
+        padding: 10px 20px;
+        font-size: 17px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        max-height: 400px;
+    }
+
+    .process-section {
+        display: flex;
+        flex-flow: column;
+    }
+    .p-header {
+        margin-bottom: 2rem;
+    }
+    .p-header a {
+        display: none;
+    }
+    .p-header p {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        border-radius: unset;
+        animation: none;
+        border: unset;
+        border-bottom: 2px solid #292929;
+    }
+
+    .btns-grp {
+        animation: none;
+        gap: .5rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        opacity: 1;
+        animation: none;
+    }
+    .hero-section {
+        height: 100%;
+        max-height: 300px;
+    }
+
+    /* hero */
+    .hero-content {
+        padding-inline: .5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+    .btns-grp-hero .btn {
+        padding: 11px 16px;
+        font-size: 15px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+}
+
+/* Responsive adjustments for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding-inline: 0.5rem;
+    }
+
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+}
