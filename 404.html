@@ -15,14 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&amp;family=Manrope:wght@200..800&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lenis@latest/dist/lenis.min.js"></script>
-    <script>
-    const lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-    </script>
 </head>
 <body>
 
@@ -55,6 +47,9 @@
         font-size: clamp(1.5rem, 3vw, 2.5rem);
         color: var(--half-white-2);
     }
+    .-container a i {
+        color: var(--half-white-2);
+    }
     .-container a {
         margin-top: 2rem;
         font-size: clamp(1rem, 2.5vw, 1.3rem);
@@ -81,7 +76,7 @@
         <div class="-container">
             <h1>404</h1>
             <h3>Looks like you've wandered off the path.</h3>
-            <a href="/">Take me home, where I belong 🎶</a>
+            <a href="/"><i class="bi bi-arrow-right"></i> &nbsp;&nbsp;&nbsp; Take me home, where I belong 🎶</a>
         </div>
     </div>
     
